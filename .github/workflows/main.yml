@@ -2,6 +2,8 @@ on:
   pull_request:
     types:
       - closed
+    branches:
+      - 'main'
 
 jobs:
   if_merged:
@@ -43,3 +45,4 @@ jobs:
             ls
             cd next
             docker compose up --build -d
+            docker image prune --force
