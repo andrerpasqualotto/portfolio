@@ -42,4 +42,4 @@ jobs:
           script: |
             ls
             cd next
-            docker compose up --build
+            docker compose up --build -d
