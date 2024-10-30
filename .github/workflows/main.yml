@@ -28,7 +28,7 @@ jobs:
           port: ${{ secrets.PORT }}
           debug: true
           source: "."
-          target: /next
+          target: /root/next
 
       - name: Executing remote SSH commands using SSH key
         uses: appleboy/ssh-action@v1.1.0
