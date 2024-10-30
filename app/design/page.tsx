@@ -42,7 +42,7 @@ export default function DesignSystem() {
 
       <div>
       <AlertDialog>
-  <AlertDialogTrigger><Button>Open</Button></AlertDialogTrigger>
+  <AlertDialogTrigger asChild><Button>Open</Button></AlertDialogTrigger>
   <AlertDialogContent>
     <AlertDialogHeader>
       <AlertDialogTitle>Are you absolutely sure?</AlertDialogTitle>
