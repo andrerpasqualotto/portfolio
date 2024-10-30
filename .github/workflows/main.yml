@@ -10,6 +10,14 @@ jobs:
     steps:
       - uses: actions/checkout@v4
 
+      - name: List directories in the repository
+        run: |
+          echo "Listing top-level directories:"
+          ls -la
+          echo "Navigating into the repository folder and listing contents:"
+          cd ${{ github.workspace }}
+          ls -la
+          
       - name: Copy file via SSH password
         uses: appleboy/scp-action@v0.1.7
         with:
