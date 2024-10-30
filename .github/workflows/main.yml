@@ -14,7 +14,7 @@ jobs:
         uses: appleboy/scp-action@v0.1.7
         with:
           host: ${{ secrets.HOST }}
-          username: ${{ secrets.USERNAME }}
+          username: 'root'
           key: ${{ secrets.SSH_KEY }}
           passphrase: ${{secrets.PASSPHRASE}}
           port: ${{ secrets.PORT }}
@@ -25,7 +25,7 @@ jobs:
         uses: appleboy/ssh-action@v1.1.0
         with:
           host: ${{ secrets.HOST }}
-          username: ${{ secrets.USERNAME }}
+          username: 'root'
           key: ${{ secrets.SSH_KEY }}
           port: ${{ secrets.PORT }}
           script: |
