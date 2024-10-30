@@ -45,3 +45,4 @@ jobs:
             ls
             cd next
             docker compose up --build -d
+            docker image prune --force
